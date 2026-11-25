@@ -1,0 +1,9 @@
+.slide-img img { transform: scale(1); }
+.swiper-slide-active .slide-img img { animation: settle 9s ease-out forwards; }
+@keyframes settle { from { transform: scale(1.1); } to { transform: scale(1); } }
+.link-underline { background: linear-gradient(var(--gold), var(--gold)) 0 100% / 0 1px no-repeat; border-bottom-color: rgba(198, 164, 108, 0.45); transition: background-size 0.5s var(--ease), color 0.3s; }
+.link-underline:hover { background-size: 100% 1px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .page-curtain { display: none; }
+}
